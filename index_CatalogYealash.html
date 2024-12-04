@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset='utf-8'>
+    <title>Ресницы</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CatalogYealash.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--<script src='main.js'></script>-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="pictures/logo.png" alt="BARBARA">
+                    </a>
+                </div>
+                </div>
+            <div class="header-right">
+                <div class="Search">
+                    <label>
+                        <input type="text" name="search" value="поиск">
+                    </label>
+                </div>
+                <div class="Entrance">
+                    <button type="button" onclick="location.href='input.html'">Вход</button>
+                    <!--<label>
+                        <a href="input.html"></a><input type="button" name="entrance" value="Вход">
+                    </label>-->
+                </div>
+                <div class="Registration">
+                    <button type="button" onclick="location.href='Registration.html'">Регистрация</button>
+                    <!--<label>
+                        <a href="Registration.html"></a><input type="button" name="registration" value="Регистрация">
+                    </label>-->
+                </div>
+                <div class="Basket">
+                    <a href="index_Basket.html">
+                        <img src="pictures/basket.png" alt="Корзина">
+                    </a>
+                </div>
+            </div>
+
+        </header>
+        <nav>
+            <ul class="top-menu">
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="IndexPodCatalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="ONas.html">О компании</a>
+                </li>
+                
+                <li>
+                    <a href="Contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <p><b>Ресницы</b></p>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="separator">|</li> <!-- Разделитель -->
+                <li><a href="IndexPodCatalog.html" class="nav-link">Каталог</a></li>
+                <li class="separator">|</li> <!-- Разделитель -->
+                <li><a class="nav-link">Ресницы</a></li>
+                
+            </ul>
+        </nav>
+    
+        <div class="wrapper">
+            <aside>
+                <ul class="left-menu">
+                    <li>
+                        <label class="parameter-label">Миксы/Отдельные длины</label>
+                        <div>
+                            <input type="radio" id="mix1" name="mix" value="Миксы">
+                            <label for="mix1">Микс</label><br>
+                            <input type="radio" id="mix2" name="mix" value="Отдельные длины">
+                            <label for="mix2">Отдельные длины</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="parameter-label">Цвет</label>
+                        <div>
+                            <input type="radio" id="color1" name="color" value="черные">
+                            <label for="color1">чёрные</label><br>
+                            <input type="radio" id="color2" name="color" value="цветные">
+                            <label for="color2">цветные</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="parameter-label">Изгиб</label>
+                        <div>
+                            <input type="radio" id="bend1" name="bend" value="C">
+                            <label for="bend1">C</label><br>
+                            <input type="radio" id="bend2" name="bend" value="D">
+                            <label for="bend2">D</label><br>
+                            <input type="radio" id="bend3" name="bend" value="M">
+                            <label for="bend3">M</label><br>
+                            <input type="radio" id="bend4" name="bend" value="L">
+                            <label for="bend4">L</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="parameter-label">Толщина</label>
+                        <div>
+                            <input type="radio" id="width1" name="width" value="0.12">
+                            <label for="width1">0.12</label><br>
+                            <input type="radio" id="width2" name="width" value="0.10">
+                            <label for="width2">0.10</label><br>
+                            <input type="radio" id="width3" name="width" value="0.07">
+                            <label for="width3">0.07</label><br>
+                            <input type="radio" id="width4" name="width" value="0.05">
+                            <label for="width4">0.05</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="parameter-label">Длина</label>
+                        <div>
+                            <input type="radio" id="length1" name="length" value="04mm">
+                            <label for="length1">04mm</label><br>
+                            <input type="radio" id="length2" name="length" value="05mm">
+                            <label for="length2">05mm</label><br>
+                            <input type="radio" id="length3" name="length" value="06mm">
+                            <label for="length3">06mm</label><br>
+                            <input type="radio" id="length4" name="length" value="07mm">
+                            <label for="length4">07mm</label><br>
+                            <input type="radio" id="length5" name="length" value="08mm">
+                            <label for="length5">08mm</label><br>
+                            <input type="radio" id="length6" name="length" value="09mm">
+                            <label for="length6">09mm</label><br>
+                            <input type="radio" id="length7" name="length" value="10mm">
+                            <label for="length7">10mm</label><br>
+                            <input type="radio" id="length8" name="length" value="11mm">
+                            <label for="length8">11mm</label><br>
+                            <input type="radio" id="length9" name="length" value="12mm">
+                            <label for="length9">12mm</label><br>
+                            <input type="radio" id="length10" name="length" value="13mm">
+                            <label for="length10">13mm</label><br>
+                            <input type="radio" id="length11" name="length" value="14mm">
+                            <label for="length11">14mm</label><br>
+                            <input type="radio" id="length12" name="length" value="15mm">
+                            <label for="length12">15mm</label><br>
+                            <input type="radio" id="length13" name="length" value="6-12mm">
+                            <label for="length13">6-12mm</label><br>
+                            <input type="radio" id="length14" name="length" value="7-12mm">
+                            <label for="length14">7-12mm</label><br>
+                            <input type="radio" id="length15" name="length" value="7-13mm">
+                            <label for="length15">7-13mm</label><br>
+                            <input type="radio" id="length16" name="length" value="7-15mm">
+                            <label for="length16">7-15mm</label><br>
+                            <input type="radio" id="length17" name="length" value="8-12mm">
+                            <label for="length17">8-12mm</label><br>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+           
+        <main>
+            <!--Сортировка-->
+            <div class="sort">
+                <!--<label for="sort">Сортировать по:</label>-->
+                <select id="sort" class="sort-select">
+                    <option value="popularmin">По популярности(убывание)</option>
+                    <option value="popularmax">По популярности(возрастание)</option>
+                    <option value="price">По цене(убывание)</option>
+                    <option value="price">По цене(возрастание)</option>
+                </select>
+            </div>
+
+            <div class="catalog">
+                <div class="product" onclick="location.href='index_ProductPage.html'">
+                    <!--<a href="index_ProductPage.html"></a>-->
+                    <div class="product-name">Ресницы чёрные BARBARA Zero Gravity NEW(16 линий)</div>
+                    <img alt="Товар 1" src="pictures/ZeroG.png">
+                    <div class="price">760 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href='#'">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product2/'">
+                    <div class="product-name">Ресницы чёрные BARBARA Zero Gravity NEW МИКС(16 линий)</div>
+                    <img alt="Товар 2" src="pictures/ZeroG.png">
+                    <div class="price">790 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href='#'">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product3/'">
+                    <div class="product-name">Чёрные ресницы BARBARA "Elegant"</div>
+                    <img alt="Товар 3" src="pictures/Elegant.png">
+                    <div class="price">1210 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href=''">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product4/'">
+                    <div class="product-name">Чёрные ресницы BARBARA "Elegant" МИКС</div>
+                    <img alt="Товар 2" src="pictures/Elegant.png">
+                    <div class="price">1100 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href=''">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="product" onclick="location.href='/catalog/product5/'">
+                    <div class="product-name">Ресницы чёрные BARBARA Zero Gravity изгиб C</div>
+                    <img alt="Товар 5" src="pictures/ZeroG.png">
+                    <div class="price">1210 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href=''">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product6/'">
+                    <div class="product-name">Ресницы чёрные BARBARA Zero Gravity изгиб D</div>
+                    <img alt="Товар 6" src="pictures/ZeroG.png">
+                    <div class="price">1100 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href=''">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="product" onclick="location.href='/catalog/product7/'">
+                    <div class="product-name">Ресницы чёрные BARBARA Zero Gravity изгиб M</div>
+                    <img alt="Товар 7" src="pictures/ZeroG.png">
+                    <div class="price">1200 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href=''">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product8/'">
+                    <div class="product-name">Ресницы чёрные BARBARA Zero Gravity изгиб L</div>
+                    <img alt="Товар 8" src="pictures/ZeroG.png">
+                    <div class="price">900 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href='Basket.html'">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product9/'">
+                    <div class="product-name">Чёрные ресницы BARBARA "Elegant" изгиб C</div>
+                    <img alt="Товар 9" src="pictures/Elegant.png">
+                    <div class="price">1520 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href='Basket.html'">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product10/'">
+                    <div class="product-name">Чёрные ресницы BARBARA "Elegant" изгиб D</div>
+                    <img alt="Товар 10" src="pictures/Elegant.png">
+                    <div class="price">1540 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href='Basket.html'">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product11/'">
+                    <div class="product-name">Чёрные ресницы BARBARA "Elegant" изгиб L</div>
+                    <img alt="Товар 11" src="pictures/Elegant.png">
+                    <div class="price">1300 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href='Basket.html'">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product12/'">
+                    <div class="product-name">Чёрные ресницы BARBARA "Elegant" изгиб M </div>
+                    <img alt="Товар 12" src="pictures/Elegant.png">
+                    <div class="price">1500 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href='Basket.html'">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product13/'">
+                    <div class="product-name">Ресницы чёрные BARBARA Zero Gravity NEW МИНИ-МИКС(6 линий)</div>
+                    <img alt="Товар 13" src="pictures/minizerograf.png">
+                    <div class="price">690 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href='Basket.html'">В корзину</button>
+                    </div>
+                </div>
+                <div class="product" onclick="location.href='/catalog/product14/'">
+                    <div class="product-name">Чёрные ресницы BARBARA "Elegant" МИНИ-МИКС (6 линий)</div>
+                    <img alt="Товар 14" src="pictures/miniElegant.png">
+                    <div class="price">1100 руб.</div>
+                    <div class="Basket">
+                        <button onclick="location.href='Basket.html'">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        </div>
+        
+        <footer>
+            <div class="footer-left">
+                <a class="logo">
+                <img src="pictures/logo.png" alt="BARBARA">
+                </a>
+                <a class="catalogfooter" href="IndexPodCatalog.html">Каталог</a>
+                <div class="additionally">
+                    <a class ="additionally-title">Дополнительно</a>
+                        <ul>
+                            <li><a href="ONas.html">О компании</a></li>
+                            <li><a href="Contacts.html">Контакты</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="button">
+                    <label>
+                        <input type="button" name="subscribe" value="Подписаться на рассылку">
+                    </label>
+                </div>
+                <div class="phone">
+                    <a href="tel:+74951515036">+7 495 151 50 36</a>
+                </div>
+                <div class="e-mail">
+                    <a href="sale@barbara-lash.com">sale@barbara-lash.com</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

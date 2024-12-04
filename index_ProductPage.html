@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset='utf-8'>
+    <title>Ресницы черные BARBARA Zero Gravity NEW (16 линий)</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='ProductPage.css'>
+    <!--<link script src='main.js'>-->
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <a href="index.html"><img src="pictures/logo.png" alt="BARBARA"></a>
+                </div>
+                </div>
+            <div class="header-right">
+                <div class="Search">
+                    <label>
+                        <input type="text" name="search" value="поиск">
+                    </label>
+                </div>
+                <div class="Entrance">
+                    <button type="button" onclick="location.href='input.html'">Вход</button>
+                    <!--<label>
+                        <a href="input.html"><input type="button" name="entrance" value="Вход"></a>
+                    </label>-->
+                </div>
+                <div class="Registration">
+                    <button type="button" onclick="location.href='Registration.html'">Регистрация</button>
+                    <!--<label>
+                        <a href="Registration.html"><input type="button" name="registration" value="Регистрация"></a>
+                    </label>-->
+                </div>
+                <div class="Basket">
+                    <a href="index_Basket.html"><img src="pictures/basket.png" alt="Корзина"></a>
+                </div>
+            </div>
+
+        </header>
+        <nav>
+            <ul class="top-menu">
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="IndexPodCatalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="ONas.html">О компании</a>
+                </li>
+                
+                <li>
+                    <a href="Contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="navbar">
+            <p><b>Ресницы</b></p>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="separator">|</li> <!-- Разделитель -->
+                <li><a href="IndexPodCatalog.html" class="nav-link">Каталог</a></li>
+                <li class="separator">|</li> <!-- Разделитель -->
+                <li><a href="index_CatalogYealash.html" class="nav-link">Ресницы</a></li>
+            </ul>
+        </nav>
+
+        <div class="wrapper">
+            <main>
+                <div class="product-name">
+                    Ресницы черные BARBARA Zero Gravity NEW (16 линий)
+                </div>
+                <div class="slider">
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <div class="slides">
+                        <img alt="Товар 1" src="pictures/ZG1.png" class="slide active">
+                        <img alt="Товар 1.2" src="pictures/ZG2.png" class="slide">
+                        <img alt="Товар 1.3" src="pictures/ZG3.png" class="slide">
+                    </div>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+
+                <div class="knopka">
+                    <input type="button" name="Description" value="Описание">
+                </div>
+                <div class="content1">
+                    <br>
+                    Новая, полностью обновленная и переработанная линейка черных ресниц Zero Gravity уже в продаже!<br>
+                    Сверхтонкий кончик ресниц создает природный эффект, делая глаза яркими и выразительными. Каждая ресничка надежно фиксируется благодаря особой форме основания, обеспечивая идеальную сцепку.<br>
+                    <br>
+                </div>
+            </main>      
+    
+        <aside>
+            <ul class="right-main">
+                <li>
+                    <label class="parameter-price"> 760 Р / шт</label>
+                </li>
+                <li>
+                    <label class="parameter-label">Длина - <span id="lengthValue"></span></label>
+                    <div>
+                        <input type="button" class="styled-button" id="length1" name="length" value="06">
+                        <input type="button" class="styled-button" id="length2" name="length" value="07">
+                        <input type="button" class="styled-button" id="length3" name="length" value="08">
+                        <input type="button" class="styled-button" id="length4" name="length" value="09">
+                        <input type="button" class="styled-button" id="length6" name="length" value="11"> 
+                        <input type="button" class="styled-button" id="length7" name="length" value="12"> 
+                        <input type="button" class="styled-button" id="length8" name="length" value="13">
+                        <input type="button" class="styled-button" id="length9" name="length" value="14">
+                        <input type="button" class="styled-button" id="length10" name="length" value="15">
+                    </div>
+                </li>
+                <li>
+                    <label class="parameter-label">Изгиб - <span id="bendValue"></span> </label>
+                    <div>
+                        <input type="button" class="styled-button" id="bend1" name="bend" value="C">
+                        <input type="button" class="styled-button" id="bend2" name="bend" value="D">
+                        <input type="button" class="styled-button" id="bend3" name="bend" value="M">
+                        <input type="button" class="styled-button" id="bend4" name="bend" value="L">
+                    </div>
+                </li>
+                <li>
+                    <label class="parameter-label">Толщина - <span id="widthValue"></span></label>
+                    <div>
+                        <input type="button" class="styled-button" id="width1" name="width" value="0.12">
+                        <input type="button" class="styled-button" id="width2" name="width" value="0.10">
+                        <input type="button" class="styled-button" id="width3" name="width" value="0.07">
+                        <input type="button" class="styled-button" id="width4" name="width" value="0.05">
+                    </div>
+                </li>
+            </ul>
+                <div class="Buttons">
+                    <div class="regulation">
+                        <input type="button" name="minus" class="regulation-btn" value="-">
+                        <input type="number" name="number" class="regulation-input" value="0" min="0">
+                        <input type="button" name="plus" class="regulation-btn" value="+">
+                    </div>
+                    <input type="button" name="basket" value="В корзину" onclick="location.href='Basket.html'">
+                </div>
+                <div class="content">
+                    Цена действительна только для интернет-<br>
+                    магазина и может отличаться от цен в<br>
+                    розничных магазинах<br>
+                </div>
+            <!--</ul> -->
+        </aside>  
+    </div>
+    
+        <footer>
+            <div class="footer-left">
+                <a class="logo">
+                <img src="pictures/logo.png" alt="BARBARA">
+                </a>
+                <a class="catalogfooter" href="IndexPodCatalog.html">Каталог</a>
+                <div class="additionally">
+                    <a class ="additionally-title">Дополнительно</a>
+                        <ul>
+                            <li><a href="ONas.html">О компании</a></li>
+                            <li><a href="Contacts.html">Контакты</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="button">
+                    <label>
+                        <input type="button" name="subscribe" value="Подписаться на рассылку">
+                    </label>
+                </div>
+                <div class="phone">
+                    <a href="tel:+74951515036">+7 495 151 50 36</a>
+                </div>
+                <div class="e-mail">
+                    <a href="sale@barbara-lash.com">sale@barbara-lash.com</a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;/*чтобы учитывал ширину целого элемента вмесет с рамкой, отступом и так далее, всегда начинать с этого!!!!*/
+}
+body {
+    font-family: "Noto Serif", serif;
+	/*font: 20px verdana;*/
+	margin: 0;
+}
+.container {
+	margin: 0 auto; 
+	max-width: 1366px;
+    
+}
+header, footer {
+	width: 100%;
+}
+header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+    height: 15%;
+    position: sticky;
+    background-color: #ffffff;
+    top: 0;
+    z-index: 1000; /* Чтобы шапка была поверх других элементов */
+}	
+div.header-left {
+	align-items: center;
+	display: flex;
+}
+div.header-right{
+    align-items: center;
+    display:flex;
+    justify-content: flex-end;
+}
+.header-right div{
+    margin-right: 30px;
+}
+.header-right button{
+    background-color: #BC987E; /* Коричневый цвет фона */
+    color: #000000; /* Цвет текста */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* Курсор при наведении */
+    font-size: 12px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}
+.header-right button:hover{
+    background-color: #cea997;
+}
+.header-right input[type="text"] {
+    background-color: #ffffff; /* Коричневый цвет фона */
+    color: #000000; /* Цвет текста */
+    /*border: none; /* Убираем границу */
+    padding: 10px; /* Отступы внутри поля ввода */
+    border-radius: 5px; /* Закругление углов */
+    font-size: 12px; /* Размер шрифта */
+}
+
+.wrapper {
+    margin: 0 auto; 
+    max-width: 1366px;
+    display: flex;
+}
+main {
+    width: 65%; /* Убедитесь, что main занимает всю ширину */
+    height: 1000px;
+    background: #ffffff;
+}
+
+div.logo {
+	margin: 30px;
+}
+div.logo img {
+	width: 60px;
+	height: 60px;
+}
+ul.top-menu {
+	display: flex;
+	justify-content: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    position: sticky;
+    top: 0; /* Закрепляем вверху */
+    z-index: 1000; /* Чтобы шапка была поверх других элементов */
+}
+ul.top-menu li {
+	width: 100%;
+    justify-content: left
+}
+ul.top-menu a {
+	background: #BC987E;
+	color: #000000;
+	display: block;
+	margin-bottom: 3px;
+	padding: 5px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+ul.top-menu a:hover {
+	background: #cea997;
+}
+.Basket img{
+    
+    width: 30px;
+	height: 30px;
+}
+
+.navbar {
+    background-color: #ffffff; /* Цвет фона навигационной панели */
+    padding: 0px; /* Отступы внутри навигационной панели */
+}
+
+.nav-list {
+    list-style-type: none; /* Убираем маркеры у списка */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block; /* Выводим элементы списка в одну строку */
+    /*position: relative; /* Для позиционирования псевдоэлемента */
+}
+.separator{
+    margin: 0 5px; /* Устанавливаем небольшой отступ между ссылками и разделителями */
+}
+.nav-link {
+    /*margin-left: 20px;*/
+    color: #808080; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    font-size: 12px; /* Размер шрифта ссылок */
+    margin-top: 0px;
+    padding: 0; /* Отступы вокруг текста ссылок */
+}
+.nav-link:hover {
+    color: #000;
+}
+
+.product-name{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.slider {
+    position: relative;
+    margin-left: 30px; /* Отступ слева */
+    margin-top: 10px;
+    display: flex; /* Используем flexbox для выравнивания */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0 30px; /* Отступы слева и справа для равномерного расстояния*/
+    justify-content: center;
+}
+
+.slide {
+    max-width: 100%;
+    height: 500px;
+    display: none; /* Скрыть все изображения по умолчанию */
+    
+}
+
+.slide.active {
+    display: block; /* Показывать только активное изображение */
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 20px; /* Увеличиваем отступ для кнопок */
+}
+
+.prev {
+    margin-right: 30px; /* Отступ между кнопкой "назад" и изображением */
+}
+
+.next {
+    margin-left: 30px; /* Отступ между изображением и кнопкой "вперед" */
+}
+
+.knopka {
+    margin-top: 60px;
+    margin-left: 30px;
+    text-align: center; /* Центрирование кнопки */
+    display: flex;
+}
+
+.knopka input[type="button"] {
+    padding: 10px 20px; /* Внутренние отступы для кнопки */
+    font-size: 16px; /* Размер шрифта для кнопки */
+    cursor: pointer; /* Курсор в виде указателя при наведении */
+    background-color: #BC987E; /* Цвет фона кнопки */
+    color: #000000; /* Цвет текста кнопки */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругление углов кнопки */
+}
+
+.content1 {
+    margin-top: 10px; /* Отступ сверху для контента описания */
+    margin-left: 30px;
+    font-size: 16px; /* Размер шрифта для текста описания */
+    line-height: 1.6; /* Межстрочный интервал для удобочитаемости */
+}
+aside{
+    width: 35%;
+	height: auto;
+	background: #ffffff;
+    margin-top: 150px;
+}
+
+.right-main {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы у списка */
+    margin-left: 30px;
+}
+
+
+.right-main li {
+    margin-bottom: 20px; /* Добавляем расстояние между элементами списка */
+}
+.parameter-price{
+    font-size: 25px;
+    font-weight: bold;
+}
+.styled-button {
+    background-color: #ffffff; /* Цвет фона кнопки */
+    color: #000000; /* Цвет текста */
+    padding: 5px 10px; /* Отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Позволяет задавать размеры кнопки */
+    font-size: 14px; /* Размер шрифта */
+    margin: 5px; /* Отступы между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.styled-button:hover {
+    background-color: #BC987E; /* Цвет фона при наведении */
+}
+.Buttons {
+    display: flex; /* Используем flexbox для выравнивания кнопок в одну строку*/
+    align-items: center; /* Выравнивание по центру по вертикали */
+    margin-top: 50px;
+    margin-left: 30px;
+
+}
+.regulation {
+    display: inline-flex; /* Используем flexbox для регулировки количества товара */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    margin: 10px;
+}
+
+.regulation-btn {
+    width: 40px; /* Ширина кнопок регулировки */
+    height: 40px; /* Высота кнопок регулировки */
+}
+
+.regulation-input {
+    width: 40px; /* Ширина поля ввода количества товара */
+    height: 40px;
+    text-align: center;
+}
+input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none; /* Для Chrome, Safari и Edge */
+            margin: 0;
+        }
+
+/* Стили для кнопки "В корзину" */
+.Buttons input[name="basket"] {
+    background-color: #BC987E; /* Цвет фона для кнопки "В корзину" */
+    color: #000000; /* Цвет текста */
+    border-radius: 5px; /* Закругленные углы */
+    height: 40px;
+    width: 120px;
+}
+
+.Buttons input[name="basket"]:hover {
+    background-color:#cea997 ; /* Цвет при наведении для кнопки "В корзину" */
+}
+.content{
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-left: 38px;
+}
+
+
+
+footer {
+
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: #BC987E
+
+}  
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+div.footer-left {
+    display: flex;
+    align-items: flex-start;
+    /*margin-right: 10%;*/
+    margin-left: 30px;
+}
+.logo,.catalogfooter,.additionally{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000;
+    /*каталог*/
+}
+.catalogfooter{
+    font-weight: bold;
+    font-size: 14px;
+}
+.catalogfooter:hover{
+    color:#808080;
+}
+.additionally{
+    display: flex;
+    flex-direction: column;
+    
+}
+.additionally-title{
+    text-decoration: none;
+    color:#000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+.additionally ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.additionally li a{         /*Обращение к подпунктам дополнительно*/
+    margin-top: 5px;
+   text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+}
+.additionally li a:hover{
+    color:#808080;
+}
+div.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+.footer-right a{
+    text-decoration: none;/*обращение к телефону и емейлу*/
+    color:#000000;
+    font-size: 12px;
+
+}
+.footer-right a:hover{
+    color:#808080;
+}
+.footer-right .button,
+.footer-right .phone,
+.footer-right .e-mail {
+    margin-bottom: 5px; /* Задаем отступ снизу для каждого элемента */
+}
+
+.footer-right .e-mail {
+    margin-bottom: 0; /* Убираем отступ у последнего элемента */
+}
+.footer-right input[type="button"]{
+    background-color: #000000; /* Коричневый цвет фона */
+    color: #BC987E; /* Цвет текста */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* Курсор при наведении */
+    font-size: 12px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}

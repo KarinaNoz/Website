@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;/*чтобы учитывал ширину целого элемента вмесет с рамкой, отступом и так далее, всегда начинать с этого!!!!*/
+}
+body {
+    font-family: "Noto Serif", serif;
+	/*font: 20px verdana;*/
+	margin: 0;
+}
+.container {
+	margin: 0 auto; 
+	max-width: 1366px;
+    
+}
+header, footer {
+	width: 100%;
+}
+
+header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+    height: 15%;
+    position: sticky;
+    background-color: #ffffff;
+    top: 0;
+    z-index: 1000; /* Чтобы шапка была поверх других элементов */
+}	
+
+div.header-left {
+	align-items: center;
+	display: flex;
+}
+
+div.header-right{
+    align-items: center;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.header-right div{
+    margin-right: 30px;
+}
+.header-right button{
+    background-color: #BC987E; /* Коричневый цвет фона */
+    color: #000000; /* Цвет текста */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* Курсор при наведении */
+    font-size: 12px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}
+.header-right button:hover{
+    background-color: #cea997;
+}
+.header-right input[type="text"] {
+    background-color: #ffffff; /* Коричневый цвет фона */
+    color: #000000; /* Цвет текста */
+    padding: 10px; /* Отступы внутри поля ввода */
+    border-radius: 5px; /* Закругление углов */
+    font-size: 12px; /* Размер шрифта */
+}
+
+main {
+	width: 75%;
+	height: 1000px;
+	/*background: #dfb7b7;*/
+    margin: 0 auto; /* Центрируем блок main */
+    padding: 20px;
+}
+div.logo {
+	margin: 30px;
+}
+div.logo img {
+	width: 60px;
+	height: 60px;
+}
+ul.top-menu {
+	display: flex;
+	justify-content: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    position: sticky;
+    top: 0; /* Закрепляем вверху */
+    z-index: 1000; /* Чтобы шапка была поверх других элементов */
+}
+ul.top-menu li {
+	width: 100%;
+    justify-content: left
+}
+ul.top-menu a {
+	background: #BC987E;
+	color: #000000;
+	display: block;
+	margin-bottom: 3px;
+	padding: 5px 0;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+ul.top-menu a:hover {
+	background: #cea997;
+}
+main{
+    width: 100%;
+
+}
+.Basket img{
+    
+    width: 30px;
+	height: 30px;
+}
+.top{
+    display: flex;
+    margin-bottom: 50px;
+}
+.dropdown{
+    position: relative;
+    /*display: flex;*/
+    margin-right: 10px;
+}
+.dropbtn{
+    cursor: pointer;
+    background-color: #BC987E; /* Коричневый цвет фона */
+    color: #000000; /* Цвет текста */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Закругление углов */
+    font-size: 12px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;/*минимальная ширина выпадающего списка*/
+    z-index: 1;
+    background-color: #BC987E;
+    font-size: 14px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a {
+    color: black; /* Цвет текста ссылок */
+    padding: 12px 16px; /* Отступы для ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: block; /* Делаем ссылки блочными элементами */
+}
+.dropdown-content a:hover{
+    background-color: #D2B48C;
+}
+.Search1 {
+    flex-grow: 1; /* Поле поиска занимает оставшееся пространство */
+}
+
+.Search1 input[type="text"] {
+    width: 100%; /* Полная ширина поля поиска */
+    padding: 10px; /* Отступы внутри поля */
+    border: 1px solid #ccc; /* Граница поля поиска */
+    border-radius: 5px; /* Закругленные углы */
+}
+div.catalog {
+	display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+a.category{
+    align-items: center;
+    flex: 0 1 calc(33.33% - 30px); /* Устанавливаем ширину каждой категории на 33.33% с учетом отступов */
+    margin: 15px; /* Добавляем отступы между элементами */
+    border-radius: 5px; /* Закругленные углы */
+    text-decoration: none;
+    color: #000000;
+    box-shadow:none;
+}
+a.category:hover{
+    box-shadow: 0 4px 15px rgba(211, 211, 211, 0.5);
+    transition: box-shadow 0.3s;
+
+}
+a.category img{
+    width: 100%; /* Устанавливаем ширину изображения на 100% от родительского элемента */
+    height: auto; /* Обеспечиваем пропорциональное масштабирование изображений */
+    
+}
+.category-name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.category-name:hover{
+    color: #808080;
+}
+footer {
+
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: #BC987E
+
+}  
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+div.footer-left {
+    display: flex;
+    align-items: flex-start;
+    /*margin-right: 10%;*/
+    margin-left: 30px;
+}
+.logo,.catalogfooter,.additionally{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000;
+    /*каталог*/
+}
+.catalogfooter{
+    font-weight: bold;
+    font-size: 14px;
+}
+.catalogfooter:hover{
+    color:#808080;
+}
+.additionally{
+    display: flex;
+    flex-direction: column;
+    
+}
+.additionally-title{
+    text-decoration: none;
+    color:#000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+.additionally ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.additionally li a{         /*Обращение к подпунктам дополнительно*/
+    margin-top: 5px;
+   text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+}
+.additionally li a:hover{
+    color:#808080;
+}
+div.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+.footer-right a{
+    text-decoration: none;/*обращение к телефону и емейлу*/
+    color:#000000;
+    font-size: 12px;
+
+}
+.footer-right a:hover{
+    color:#808080;
+}
+.footer-right .button,
+.footer-right .phone,
+.footer-right .e-mail {
+    margin-bottom: 5px; /* Задаем отступ снизу для каждого элемента */
+}
+
+.footer-right .e-mail {
+    margin-bottom: 0; /* Убираем отступ у последнего элемента */
+}
+.footer-right input[type="button"]{
+    background-color: #000000; /* Коричневый цвет фона */
+    color: #BC987E; /* Цвет текста */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* Курсор при наведении */
+    font-size: 12px; /* Размер шрифта */
+    transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}

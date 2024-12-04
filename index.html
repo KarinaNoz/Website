@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Главная</title>
+		<link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="header-left">
+					<div class="logo">
+                        <a href="index.html">
+                            <img src="pictures/logo.png" alt="BARBARA">
+                        </a>
+					</div>
+                    </div>
+                <div class="header-right">
+                    <div class="Search">
+                        <label>
+                            <input type="text" name="search" value="поиск">
+                        </label>
+                    </div>
+                    <div class="Entrance">
+                        <button type="button" onclick="location.href='input.html'">Вход</button>
+                    </div>
+                    <!--<div class="Entrance">
+                        <input type="button" name="entrance" value="Вход" onclick="location.href='input.html'>
+                    </div>-->
+                    <div class="Registration">
+                        <button type="button" onclick="location.href='Registration.html'">Регистрация</button>
+                        <!--<label>
+                            <a href="input.html">
+                                <input type="button" name="registration" value="Регистрация">
+                            </a>
+                        </label>-->
+                    </div>
+                    <div class="Basket">
+                        <a href="index_Basket.html">
+                            <img src="pictures/basket.png" alt="Корзина">
+                        </a>
+                    </div>
+                </div>
+               
+			</header>
+			<nav>
+				<ul class="top-menu">
+					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
+						<a href="IndexPodCatalog.html">Каталог</a>
+					</li>
+					<li>
+						<a href="ONas.html">О компании</a>
+					</li>
+					
+					<li>
+						<a href="Contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<main>
+                <div class="marketing-slides">
+                    <button class="prev" onclick="changeSlide(-1)">&#10096;</button>
+                    <div class="m-slides">
+                        <img alt="Реклама 1" src="pictures/BS1.png" class="slide active">
+                        <img alt="Реклама 1.2" src="pictures/BS2.png" class="slide">
+                        <img alt="Реклама 1.3" src="pictures/BS3.png" class="slide">
+                        <img alt="Реклама 1.4" src="pictures/BS4.png" class="slide">
+                    </div>
+                <button class="next" onclick="changeSlide(1)">&#10097;</button>
+                </div>
+                <div class="heading">
+                    Популярные категории BARBARA
+                </div>
+                
+                <div class="catalog">
+                    <a class="category" href="index_CatalogYealash.html">
+                        <img src="pictures/Eyelash1.png" alt="Ресницы">
+                        <div class="category-name">Ресницы</div>
+                    </a>
+                    <a class="category" href="/catalogpopular/category2">
+                            <img src="pictures/glue1.png" alt="Клей">
+                            <div class="category-name">Клей</div>
+                    </a>
+                    <a class="category" href="/catalogpopular/category3">
+                            <img src="pictures/preporates.png" alt="Препараты">
+                            <div class="category-name">Препараты</div>
+                    </a>
+                    <a class="category" href="/catalogpopular/category4">
+                            <img src="pictures/twe.png" alt="Пинцеты">
+                            <div class="category-name">Пинцеты</div>
+                    </a>
+                </div>
+                <div class="heading">
+                    Выгоды от покупки продукции
+                </div>
+                <div class="content">
+                    Купить материалы Barbara — значит приобрести 100 % оригинальную продукцию. Сертификат качества предоставляется по требованию клиента. Отличительные особенности нашего магазина:<br>
+                    <nuv>
+                        <ul>
+                            <li>большой выбор;</li>
+                            <li>демократичные цены;</li>
+                            <li>постоянное обновление и пополнение ассортимента;</li>
+                            <li>моментальное оформление поступившей заявки, гарантирующее быструю доставку.</li>
+                        </ul>
+                    </nuv> 
+                </div>
+                
+            </main>
+			<footer>
+                <div class="footer-left">
+					<a class="logo">
+                    <img src="pictures/logo.png" alt="BARBARA">
+                    </a>
+                    <a class="catalogfooter" href="IndexPodCatalog.html">Каталог</a>
+                    <div class="additionally">
+                        <a class ="additionally-title">Дополнительно</a>
+                            <ul>
+                                <li><a href="ONas.html">О компании</a></li>
+                                <li><a href="Contacts.html">Контакты</a></li>
+                            </ul>
+                    </div>
+
+                </div>
+                <div class="footer-right">
+                    <div class="button">
+                        <label>
+                            <input type="button" name="subscribe" value="Подписаться на рассылку">
+                        </label>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+74951515036">+7 495 151 50 36</a>
+                    </div>
+                    <div class="e-mail">
+                        <a href="sale@barbara-lash.com">sale@barbara-lash.com</a>
+                    </div>
+
+                </div>
+            </footer>
+		</div>
+	</body>
+</html>
